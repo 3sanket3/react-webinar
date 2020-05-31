@@ -6,35 +6,11 @@ function AdditionalCricketer(props) {
   const [additionalCricketers, setAdditionalCricketers] = useState([]);
 
   useEffect(() => {
-    getAdditionalCricketers();
-  }, []);
-
-  function getAdditionalCricketers() {
     axios.get("http://localhost:3001/additional").then((response) => {
       setAdditionalCricketers(response.data);
     });
-  }
+  }, []);
 
-  function AddToCSK(cricketer) {
-    axios.post("http://localhost:3001/csk", cricketer).then(() => {
-      props.refreshCSK();
-      axios
-        .delete("http://localhost:3001/additional/" + cricketer.id)
-        .then(() => {
-          getAdditionalCricketers();
-        });
-    });
-  }
-  function AddToMI(cricketer) {
-    axios.post("http://localhost:3001/mi", cricketer).then(() => {
-      props.refreshMI();
-      axios
-        .delete("http://localhost:3001/additional/" + cricketer.id)
-        .then(() => {
-          getAdditionalCricketers();
-        });
-    });
-  }
   return (
     <div>
       <h1>Additional Cricketers</h1>
@@ -43,8 +19,7 @@ function AdditionalCricketer(props) {
           <div key={cricketer.id} className="additional-cricketer-wrapper">
             <CricketerCard cricketer={cricketer} />
             <div>
-              <button onClick={() => AddToCSK(cricketer)}>Add To CSK </button> |{" "}
-              <button onClick={() => AddToMI(cricketer)}>Add To MI </button>
+              <button>Add To CSK </button> | <button>Add To MI </button>
             </div>
           </div>
         ))}
