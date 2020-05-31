@@ -49,6 +49,14 @@
       "out": false,
       "id": 5,
       "picture": "https://www.espncricinfo.com/inline/content/image/818707.html?alt=1"
+    },
+    {
+      "name": {
+        "first": "Q",
+        "last": "de Kock"
+      },
+      "id": 9,
+      "picture": "https://www.espncricinfo.com/inline/content/image/1100136.html?alt=1"
     }
   ],
   "csk": [
@@ -101,9 +109,7 @@
       "out": false,
       "id": 5,
       "picture": "https://www.espncricinfo.com/inline/content/image/1220588.html"
-    }
-  ],
-  "additional": [
+    },
     {
       "name": {
         "first": "Dwayne",
@@ -114,27 +120,20 @@
     },
     {
       "name": {
-        "first": "Krunal",
-        "last": "Pandya"
-      },
-      "id": 8,
-      "picture": "https://www.espncricinfo.com/inline/content/image/1001015.html?alt=5"
-    },
-    {
-      "name": {
-        "first": "Q",
-        "last": "de Kock"
-      },
-      "id": 9,
-      "picture": "https://www.espncricinfo.com/inline/content/image/1100136.html?alt=1"
-    },
-    {
-      "name": {
         "first": "F.",
         "last": "DU Plessis"
       },
       "id": 7,
       "picture": "https://www.espncricinfo.com/inline/content/image/1100150.html?alt=1"
+    },
+    {
+      "name": {
+        "first": "Krunal",
+        "last": "Pandya"
+      },
+      "id": 8,
+      "picture": "https://www.espncricinfo.com/inline/content/image/1001015.html?alt=5"
     }
-  ]
+  ],
+  "additional": []
 }
